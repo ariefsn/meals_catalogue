@@ -1,0 +1,597 @@
+{
+  "foods": [
+    {
+      "id": 1,
+      "name": "Opor Ayam",
+      "image": "https://i0.wp.com/www.satujam.com/wp-content/uploads/2015/10/resep-opor-ayam-enak-namun-sederhana.jpg?zoom=1.25&resize=570%2C380&ssl=1",
+      "category": "breakfast",
+      "ingredient": [
+        "Daging ayam ½ kg",
+        "Santan kelapa 200 cc",
+        "Air putih 1 gelas",
+        "Daun salam 1 lembar",
+        "Serai geprek 2 batang",
+        "Garam secukupnya",
+        "Minyak goreng 1sdm"
+      ],
+      "seasoning": [
+        "Bawang merah 3 butir",
+        "Bawang putih 2 siung",
+        "Kemiri 5 butir",
+        "Ketumbar 1 sdt",
+        "Pala ½ sdt",
+        "Lengkuas 3 cm",
+        "Kunyit 2 cm",
+        "Jahe 3 cm"
+      ],
+      "howto": ""
+    },
+    {
+      "id": 2,
+      "name": "Sayur Asem Sunda",
+      "image": "https://i2.wp.com/satujam.com/wp-content/uploads/2015/10/6-resep-makanan-sederhana-ala-nusantara.jpg?w=900&ssl=1",
+      "category": "breakfast",
+      "ingredient": [
+        "2 buah jagung manis",
+        "2 sdm kacang tanah",
+        "2 sdm buah melinjo",
+        "2 lembar daun salam",
+        "daun melinjo 15 lembar",
+        "3-4 buah cabe ijo besar",
+        "75 gr kacang panjang",
+        "1 buah labu siam",
+        "3 cm lengkuas",
+        "4 sdm air asam",
+        "1,5 lt air"
+      ],
+      "seasoning": [
+        "1 sdt terasi",
+        "3 siung bawang putih",
+        "3 cabe merah",
+        "garam secukupnya",
+        "gula merah secukupnya"
+      ],
+      "howto": ""
+    },
+    {
+      "id": 3,
+      "name": "Ayam Bakar Rujak",
+      "image": "https://i2.wp.com/www.satujam.com/wp-content/uploads/2015/10/resep-ayam-bakar-bumbu-rujak.jpg?zoom=1.25&resize=570%2C375&ssl=1",
+      "category": "breakfast",
+      "ingredient": [
+        "1 ekor ayam",
+        "1 bungkus royco ayam",
+        "4 lembar daun jeruk",
+        "500 ml santan",
+        "2 sdm air asam jawa"
+      ],
+      "seasoning": [
+        "150 gr cabe merah",
+        "1 sdt garam",
+        "2 sdm gula pasir",
+        "1 sdt gula merah",
+        "½ sdt terasi"
+      ],
+      "howto": ""
+    },
+    {
+      "id": 4,
+      "name": "Pecel Lele",
+      "image": "https://i0.wp.com/www.satujam.com/wp-content/uploads/2015/10/resep-pecel-lele-sedap.jpg?zoom=1.25&resize=650%2C433&ssl=1",
+      "category": "breakfast",
+      "ingredient": [
+        "3 siung bawang putih",
+        "1 sdt ketumbar",
+        "2 cm kunyit",
+        "1 sdm garam",
+        "1 sdm air jeruk nipis"
+      ],
+      "seasoning": [
+        "10 buah cabai rawit",
+        "6 buah cabai merah besar",
+        "1 buah tomat",
+        "2 sdt gula merah",
+        "1 sdt garam",
+        "1 jeruk limau"
+      ],
+      "howto": ""
+    },
+    {
+      "id": 5,
+      "name": "Buntut Sapi Pedas Manis",
+      "image": "https://i1.wp.com/satujam.com/wp-content/uploads/2015/10/Resep-buntut-sapi-pedas-manis.jpg?w=640&ssl=1",
+      "category": "breakfast",
+      "ingredient": [
+        "500 gr daging buntut sapi",
+        "kecap manis",
+        "madu secukupnya",
+        "jahe 5cm",
+        "2 lembar daun jeruk",
+        "Serai geprek 2 batang",
+        "1l air",
+        "kaldu daging",
+        "Garam secukupnya",
+        "Minyak goreng 1sdm"
+      ],
+      "seasoning": [
+        "10 buah cabai rawit",
+        "Bawang merah 3 butir",
+        "Bawang putih 7 siung",
+        "Merica",
+        "1 sdt jintan",
+        "Ketumbar 1 sdt"
+      ],
+      "howto": ""
+    },
+    {
+      "id": 6,
+      "name": "Orak-Arik Sayuran",
+      "image": "https://i2.wp.com/satujam.com/wp-content/uploads/2015/10/Orak-arik-sayuran.jpg?w=723&ssl=1",
+      "category": "breakfast",
+      "ingredient": [
+        "100 gr kol",
+        "Garam secukupnya",
+        "1l air",
+        "3 butir telur ayam",
+        "2 sdm minyak tumis",
+        "75 gr wortel",
+        "2 batang seledri",
+        "75 gr kacang panjang"
+      ],
+      "seasoning": [
+        "Merica",
+        "Bawang putih 2 siung",
+        "Bawang merah 3 siung",
+        "6 buah cabai merah besar"
+      ],
+      "howto": ""
+    },
+    {
+      "id": 7,
+      "name": "Tahu Isi",
+      "image": "https://i2.wp.com/satujam.com/wp-content/uploads/2015/10/Resep-Tahu-Isi.jpg?w=750&ssl=1",
+      "category": "breakfast",
+      "ingredient": [
+        "Merica",
+        "Daun bawang",
+        "Kaldu bubuk",
+        "Taoge",
+        "75 gr wortel"
+      ],
+      "seasoning": [
+        "Air",
+        "garam secukupnya",
+        "10 buah tahu pong",
+        "Tepung terigu"
+      ],
+      "howto": ""
+    },
+    {
+      "id": 8,
+      "name": "Nasi Goreng Telur Dadar",
+      "image": "https://i0.wp.com/satujam.com/wp-content/uploads/2015/10/Nasi-Goreng-Telur-Dadar.jpg?w=750&ssl=1",
+      "category": "breakfast",
+      "ingredient": [
+        "3 butir telur ayam",
+        "1 piring nasi",
+        "3-4 buah cabe ijo merah",
+        "1 siung bawang putih",
+        "1 siung bawang merah",
+        "1 sdt saus tiram"
+      ],
+      "seasoning": [
+        "lada bubuk",
+        "mentega",
+        "kecap asin"
+      ],
+      "howto": ""
+    },
+    {
+      "id": 9,
+      "name": "Urap",
+      "image": "https://i1.wp.com/satujam.com/wp-content/uploads/2015/10/resep-urap.jpg?w=750&ssl=1",
+      "category": "breakfast",
+      "ingredient": [
+        "1 ikat daun bayam",
+        "1 ikat daun kangkung",
+        "1 ikat daun kemangi",
+        "1 ons tauge",
+        "75 gr kacang panjang"
+      ],
+      "seasoning": [
+        "Bawang putih 7 siung",
+        "3 cabe merah",
+        "2 buah kencur",
+        "4 buah cabe rawit",
+        "1 sdt gula merah",
+        "2 sdm gula pasir",
+        "garam secukupnya"
+      ],
+      "howto": ""
+    },
+    {
+      "id": 10,
+      "name": "Gado-Gado",
+      "image": "https://i0.wp.com/satujam.com/wp-content/uploads/2015/10/gado-gado.jpg?w=750&ssl=1",
+      "category": "breakfast",
+      "ingredient": [
+        "150 gr tahu cina",
+        "150 gr tempe",
+        "150 gr kol",
+        "150 gr tauge",
+        "150 gr kacang panjang",
+        "150 gr daun selada",
+        "3 butir telur ayam",
+        "1 buah timun",
+        "1 buah tomat",
+        "Air putih 1 gelas"
+      ],
+      "seasoning": [
+        "Bawang putih 7 siung",
+        "3 cabe merah",
+        "5 lembar daun jeruk purut",
+        "250 gr kacang tanah",
+        "500 ml santan",
+        "2 sdt gula merah",
+        "3 sdm air asam jawa",
+        "1 sdt garam"
+      ],
+      "howto": ""
+    },
+    {
+      "id": 11,
+      "name": "Udang Goreng Tepung",
+      "image": "https://i2.wp.com/satujam.com/wp-content/uploads/2016/09/udang-goreng.jpg?w=750&ssl=1",
+      "category": "breakfast",
+      "ingredient": [
+        "500 gr udang",
+        "250 gr tepung terigu",
+        "1l air"
+      ],
+      "seasoning": [
+        "¼ sdt merica bubuk",
+        "¼ sdt garam",
+        "¼ sdt baking powder",
+        "3 siung bawang putih",
+        "1 sdt air jeruk"
+      ],
+      "howto": ""
+    },
+    {
+      "id": 12,
+      "name": "Sambal Goreng Kentang",
+      "image": "https://i1.wp.com/satujam.com/wp-content/uploads/2016/09/kentang-tempe.jpg?w=750&ssl=1",
+      "category": "breakfast",
+      "ingredient": [
+        "4 buah kentang",
+        "1 bungkus tempe",
+        "Air putih 1 gelas",
+        "kecap manis",
+        "Minyak goreng 1sdm",
+        "Garam secukupnya"
+      ],
+      "seasoning": [
+        "Bawang putih 5 siung",
+        "Bawang merah 10 siung",
+        "10 buah cabai rawit",
+        "2 sdm gula pasir",
+        "1 sdt air jeruk"
+      ],
+      "howto": ""
+    },
+    {
+      "id": 13,
+      "name": "Tongseng Kambing",
+      "image": "https://i0.wp.com/satujam.com/wp-content/uploads/2015/10/tongseng-kambing.jpg?w=750&ssl=1",
+      "category": "breakfast",
+      "ingredient": [
+        "400 gr daging kambing",
+        "1l santan"
+      ],
+      "seasoning": [
+        "3 siung bawang putih",
+        "Bawang merah 10 siung",
+        "Kunyit 2 cm",
+        "Jahe 3 cm",
+        "¼ sdt merica bubuk",
+        "Ketumbar 1 sdt",
+        "Kemiri 5 butir",
+        "2 sdm gula pasir",
+        "2 batang serai",
+        "Lengkuas 3 cm",
+        "Daun bawang",
+        "garam secukupnya"
+      ],
+      "howto": ""
+    },
+    {
+      "id": 14,
+      "name": "Gulai Ayam",
+      "image": "https://i1.wp.com/satujam.com/wp-content/uploads/2015/10/GULAI_AYAM-koreksi_7_12.1.41_960X1440.jpeg?w=750&ssl=1",
+      "category": "breakfast",
+      "ingredient": [
+        "500 gr daging ayam",
+        "2 lembar daun jeruk",
+        "Serai geprek 2 batang",
+        "2 cm kunyit",
+        "2 sdm air asam jawa",
+        "3 cm lengkuas",
+        "2 butir cengkeh"
+      ],
+      "seasoning": [
+        "Bawang putih 2 siung",
+        "Bawang merah 3 butir",
+        "10 buah cabai rawit",
+        "Kemiri 5 butir",
+        "Jahe 3 cm",
+        "Kunyit 2 cm",
+        "1 sdt garam",
+        "1 sdt jintan",
+        "¼ sdt merica bubuk",
+        "2 sdm gula pasir",
+        "Ketumbar 1 sdt"
+      ],
+      "howto": ""
+    },
+    {
+      "id": 15,
+      "name": "Rica-Rica Sapi",
+      "image": "https://i0.wp.com/satujam.com/wp-content/uploads/2015/10/rica-rica-sapi.jpg?w=750&ssl=1",
+      "category": "breakfast",
+      "ingredient": [
+        "500 gr daging sapi",
+        "jahe 5cm",
+        "1,5 lt air",
+        "Serai geprek 2 batang",
+        "4 lembar daun jeruk",
+        "Merica",
+        "Garam secukupnya",
+        "kecap manis",
+        "1 buah tomat",
+        "2 sdm air asam jawa",
+        "2 sdm minyak tumis",
+        "bawang goreng"
+      ],
+      "seasoning": [
+        "1 sdt terasi",
+        "Bawang putih 5 siung",
+        "Bawang merah 10 siung",
+        "4 buah cabe rawit",
+        "6 buah cabai merah besar",
+        "Jahe 3 cm"
+      ],
+      "howto": ""
+    },
+    {
+      "id": 16,
+      "name": "Terong Balado",
+      "image": "https://i2.wp.com/satujam.com/wp-content/uploads/2016/09/terong-balado.jpg?w=750&ssl=1",
+      "category": "breakfast",
+      "ingredient": [
+        "4 buah terong ungu"
+      ],
+      "seasoning": [
+        "Bawang merah 10 siung",
+        "6 buah cabai merah besar",
+        "Bawang putih 5 siung",
+        "1 buah tomat",
+        "4 buah cabe rawit",
+        "2 sdm gula pasir",
+        "garam secukupnya"
+      ],
+      "howto": ""
+    },
+    {
+      "id": 17,
+      "name": "Roti Gulung Cokelat",
+      "image": "https://cdn.idntimes.com/content-images/post/20180322/photo-44722880e8e3d423e1791c365399b602.jpg",
+      "category": "desert",
+      "ingredient": [
+        "Roti Tawar",
+        "Selai Cokelat"
+      ],
+      "seasoning": [
+      ],
+      "howto": "Mau makan bolu gulung tetapi ingin membuat sendiri dalam waktu instan? Gampang banget kok. Sediakan saja roti tawar dan selai coklat kesukaanmu, potong bagian pinggirnya, kemudian gulung supaya menyerupai bolu gulung. Jadi, deh!"
+    },
+    {
+      "id": 18,
+      "name": "Oreo Goreng",
+      "image": "https://cdn.idntimes.com/content-images/post/20180322/oreo-goreng-20171005-110102-cad8012c709d7633fdf7a84e3f018f64.jpg",
+      "category": "desert",
+      "ingredient": [
+        "Tepung Pancake",
+        "Oreo",
+        "Minyak goreng"
+      ],
+      "seasoning": [
+      ],
+      "howto": "Pasti sering mendengar nama dessert ini, kan? Ternyata resepnya gak ribet. Cukup sediakan tepung pancake, oreo, dan minyak goreng. Celupkan Oreo dalam adonan, goreng sesaat, jadi deh!"
+    },
+    {
+      "id": 19,
+      "name": "Selai Pisang Oreo",
+      "image": "https://cdn.idntimes.com/content-images/post/20180322/sandwich-pisang-oreo-informa-f8fb1224a5753779d320e2c042eb568b.jpg",
+      "category": "desert",
+      "ingredient": [
+        "Oreo",
+        "Pisang",
+        "Krim",
+        "Selai",
+        "Cokelat"
+      ],
+      "seasoning": [
+      ],
+      "howto": "Bosan dengan rasa pisang yang gitu-gitu aja? Aatau ingin membuat selai yang lebih sehat tanpa bahan pengawet sendiri di rumah? Sediakan oreo, pisang, serta krim favoritmu. Campurkan seluruhnya, tumbuk-tumbuk, jadi deh selai homemade  buatanmu!"
+    },
+    {
+      "id": 20,
+      "name": "Es Sprite Jelly",
+      "image": "https://cdn.idntimes.com/content-images/post/20180322/b6c53a6ab40153f2-39b6375c2f6a163db9d06de118c0fda8.jpg",
+      "category": "desert",
+      "ingredient": [
+        "Jelly",
+        "Sprite",
+        "Tusuk Es Krim"
+      ],
+      "seasoning": [
+      ],
+      "howto": "Udara di luar panas, dan butuh sesuatu yang menyegarkan dahaga? Buat jelly dari agar-agar instan dan Sprite. Tuang jelly dan Sprite dalam satu wadah, bekukan. Voila, es krim batang kreasimu pun siap untuk dinikmati bersama!"
+    },
+    {
+      "id": 21,
+      "name": "Es Cokelat Kiwi",
+      "image": "https://cdn.idntimes.com/content-images/post/20180322/es-loli-kiwi-lapis-cokelat-001-kun-sila-ananda-ed2791f8186a30e7e2e187404950a397.jpg",
+      "category": "desert",
+      "ingredient": [
+        "Kiwi",
+        "Cokelat"
+      ],
+      "seasoning": [
+      ],
+      "howto": "Mau makan buah dengan cara gak biasa? Lelehkan coklat, kemudian tusuk kiwi yang sudah beku dan celupkan di dalam coklat tersebut. Rasanya dijamin lebih nikmat, deh!"
+    },
+    {
+      "id": 22,
+      "name": "Es Potong Jus",
+      "image": "https://cdn.idntimes.com/content-images/post/20180322/es-loli-141330354b0ee8d4f90db1327533c910.jpg",
+      "category": "desert",
+      "ingredient": [
+        "Kiwi",
+        "Mangga",
+        "Jeruk",
+        "Durian",
+        "Anggur"
+      ],
+      "seasoning": [
+      ],
+      "howto": "Buat jus favoritmu secara terpisah. Misalnya kiwi, mangga, jeruk, durian, anggur, atau strawberi. Kemudian, tuangkan satu per satu dan bekukan. Jadilah es krim sehat dengan aneka macam buah milikmu."
+    },
+    {
+      "id": 23,
+      "name": "Es Batang Nutella",
+      "image": "https://cdn.idntimes.com/content-images/post/20180322/nutt-5ae99695ee987169b6fbdb5621071941.jpeg",
+      "category": "desert",
+      "ingredient": [
+        "Nutella",
+        "Susu",
+        "Tusuk Es Krim"
+      ],
+      "seasoning": [
+      ],
+      "howto": "Tak bisa lepas dari cokelat? Maka es krim Nutella bisa jadi pilihan. Caranya sangat mudah, kok. Cukup campurkan Nutella dan susu, kemudian bekukan. Jadi deh es krim sekelas restoran yang bisa kamu nikmati sampai puas di rumah!"
+    },
+    {
+      "id": 24,
+      "name": "Karamel Cokelat Kacang",
+      "image": "https://cdn.idntimes.com/content-images/post/20151220/8-1501be409a282889e096edc1b18a135b.jpg",
+      "category": "desert",
+      "ingredient": [
+        "Kacang",
+        "Vanilla",
+        "Cokelat",
+        "Karamel",
+        "Cup"
+      ],
+      "seasoning": [
+      ],
+      "howto": "Gak perlu ribet, kamu cukup menuangkan kacang di dasar cup. Kemudian lapisi dengan es krim vanilla yang sudah kamu beli, tumpuk lagi dengan selai cokelat, karamel, atau bahan-bahan lain favoritmu. Bekukan sesaat, dan es krim penuh karamel, coklat, dan kacang kesukaanmu sudah siap disantap."
+    },
+    {
+      "id": 25,
+      "name": "Yoghurt Pisang Strawberry",
+      "image": "https://cdn.idntimes.com/content-images/post/20151220/9-eddf65e324b949f76ae6b3921a35dc43.jpg",
+      "category": "desert",
+      "ingredient": [
+        "Pisang",
+        "Strawberry",
+        "Yoghurt"
+      ],
+      "seasoning": [
+      ],
+      "howto": "Bagi para pecinta kesehatan atau yang sedang diet, kamu bisa membuat dan menikmati es krim ini dengan mudah. Cukup sediakan yoghurt plain, potong pisang, dan strawberi, kemudian campurkan seluruhnya dan dibekukan bersama."
+    },
+    {
+      "id": 26,
+      "name": "Biskuit Oat Pisang",
+      "image": "https://cdn.idntimes.com/content-images/post/20180322/122-9b6c8135a9d0edc86e81be5cf8eee168.jpg",
+      "category": "desert",
+      "ingredient": [
+        "Oat",
+        "Pisang"
+      ],
+      "seasoning": [
+      ],
+      "howto": "Campurkan oat dan pisang secara bersama, kemudian bentuklah berupa bulatan atau sesuai dengan seleramu sendiri. Setelahnya, panggang hasil adonan tersebut dan jadilah biskuit oat pisang sehat kreasimu sendiri."
+    },
+    {
+      "id": 27,
+      "name": "Cokelat Pisang Kacang",
+      "image": "https://cdn.idntimes.com/content-images/post/20180322/fwfx57ehjahvvhxlarge-467fd925a21977bc7756d086b72200f4.jpg",
+      "category": "desert",
+      "ingredient": [
+        "Pisang",
+        "Cokelat",
+        "Kacang",
+        "Butter"
+      ],
+      "seasoning": [
+      ],
+      "howto": "Potong-potong pisang, berikan peanut butter di atasnya, kemudian tumpuk lagi dengan pisang, dan terakhir celupkan di cokelat. Bekukan, dan kreasi dessert lezat milikmu siap dinikmati bersama orang tercinta."
+    },
+    {
+      "id": 28,
+      "name": "Pancake Pisang",
+      "image": "https://cdn.idntimes.com/content-images/post/20180322/pancake-pisang-tanpa-telur-535f3582660115dc0c745a24b5143541.jpg",
+      "category": "desert",
+      "ingredient": [
+        "Pisang",
+        "Telur"
+      ],
+      "seasoning": [
+      ],
+      "howto": "Ingin membuat pancake tanpa tepung? Ternyata bisa lho memanfaatkan pisang yang dicampur dengan telur. Baru tahu juga, ya ? Yuk, dicoba!"
+    },
+    {
+      "id": 29,
+      "name": "Pudding Jelly",
+      "image": "https://cdn.idntimes.com/content-images/post/20180322/543150-620-031e5dd52fb320596c477eee7003a987.jpg",
+      "category": "desert",
+      "ingredient": [
+        "Kulit Jeruk",
+        "Jelly"
+      ],
+      "seasoning": [
+      ],
+      "howto": "Kupas jeruk dari kulitnya, tapi jangan buang kulit jeruk tersebut. Isilah dengan agar-agar dan bekukan. Jadilah kamu memakan agar-agar dengan menggunakan kulit jeruk. Segar di mata, segar di lidah dan perut!"
+    },
+    {
+      "id": 30,
+      "name": "Es Pisang Cokelat",
+      "image": "https://cdn.idntimes.com/content-images/post/20180322/resep-es-pisang-coklat-65fb302c2744666c9dcccd18f4360cd6.jpg",
+      "category": "desert",
+      "ingredient": [
+        "Cokelat",
+        "Pisang",
+        "Tusuk Es Krim"
+      ],
+      "seasoning": [
+      ],
+      "howto": "Pasti sering melihat dessert  satu ini di bazaar-bazaar mall, bukan? Ternyata pembuatannya gak susah, kok. Cukup potong pisang jadi dua, kemudian tusuk pada stick es krim untuk dibekukan. Setelahnya, celupkan di dalam lelehan coklat dan beri taburan favorit milikmu."
+    },
+    {
+      "id": 31,
+      "name": "Stick Cokelat Kacang",
+      "image": "https://cdn.idntimes.com/content-images/post/20151220/15-d28029e4762ca02b2d0759dd33aaeac5.jpg",
+      "category": "desert",
+      "ingredient": [
+        "Cokelat",
+        "Kacang",
+        "Roti Tawar"
+      ],
+      "seasoning": [
+      ],
+      "howto": "Ingin membuat camilan praktis di rumah?  Potong roti tawar berbentuk persegi panjang, kemudian panggang. Setelahnya, celupkan ke lelehan coklat dan beri taburan kacang. Tiriskan. Stik renyah cokelat kacang buatanmu pun siap dimakan."
+    }
+  ]
+}

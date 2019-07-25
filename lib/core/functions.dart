@@ -1,9 +1,9 @@
 import 'package:flutter/services.dart' show rootBundle;
 import 'dart:async';
 import 'dart:convert';
-import 'package:meals_catalogue/models/makananModel.dart';
+import 'package:meals_catalogue/models/foodModel.dart';
 
-Future<Map<String, dynamic>> readDataMakanan () async {
+Future<Map<String, dynamic>> readDataFood () async {
   String jsonString = await loadAsset();
   Map<String, dynamic> result = jsonDecode(jsonString);
 
@@ -11,16 +11,16 @@ Future<Map<String, dynamic>> readDataMakanan () async {
 }
 
 Future<String> loadAsset() async {
-  return await rootBundle.loadString('lib/assets/dataMakanan.json');
+  return await rootBundle.loadString('lib/assets/foodsData.json');
 }
 
-Future<List<MakananModel>> getMakanan () async {
-  List<MakananModel> result = [];
+Future<List<FoodModel>> getFood () async {
+  List<FoodModel> result = [];
   
-  var res = await readDataMakanan();
+  var res = await readDataFood();
 
-  res["makanan"].forEach((f){
-    MakananModel m = MakananModel.fromJson(f);
+  res["foods"].forEach((f){
+    FoodModel m = FoodModel.fromJson(f);
     result.add(m);
   });
 
