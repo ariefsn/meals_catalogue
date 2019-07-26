@@ -1,4 +1,6 @@
+import 'dart:async';
 import 'package:flutter/material.dart';
+import 'package:meals_catalogue/core/functions.dart';
 import 'package:meals_catalogue/models/foodModel.dart';
 
 class DetailScreen extends StatefulWidget {
@@ -7,7 +9,7 @@ class DetailScreen extends StatefulWidget {
   final GlobalKey<ScaffoldState> scaffoldKey;
   final void Function() callback;
 
-  const DetailScreen({Key key, this.title = "Detail Bahan Food", this.item, this.scaffoldKey, this.callback, }) : super(key: key);
+  const DetailScreen({Key key, this.title = "Food's Ingredients", this.item, this.scaffoldKey, this.callback, }) : super(key: key);
 
   @override
   _DetailScreenState createState() => _DetailScreenState();
@@ -16,14 +18,36 @@ class DetailScreen extends StatefulWidget {
 class _DetailScreenState extends State<DetailScreen> with TickerProviderStateMixin {
   TabController _tabController;
   ScaffoldState _scaffoldState;
+  bool _showLoading = true;
+  FoodModel _foodModel;
 
   @override
   void initState() {
     _tabController = TabController(initialIndex: 0, length: 2, vsync: this);
-    WidgetsBinding.instance
+    try {
+      getFoodDetailById(widget.item.idMeal).then((v) {
+        setState(() {
+          _foodModel = FoodModel.fromJson(v.toJson());
+          WidgetsBinding.instance
+            .addPostFrameCallback((_) => _scaffoldState.showSnackBar(
+              SnackBar(
+                content: Text("You choose ${v.strMeal}"),
+                action: SnackBarAction(
+                  label: "Go Back",
+                  onPressed: () {
+                    Navigator.pop(context);
+                  },
+                ),
+              )
+            ));
+          _showLoading = false;
+        });
+      });
+    } on TimeoutException {
+      WidgetsBinding.instance
         .addPostFrameCallback((_) => _scaffoldState.showSnackBar(
           SnackBar(
-            content: Text("You choose ${widget.item.name}"),
+            content: Text("Unable to load data. Timeout."),
             action: SnackBarAction(
               label: "Go Back",
               onPressed: () {
@@ -32,6 +56,7 @@ class _DetailScreenState extends State<DetailScreen> with TickerProviderStateMix
             ),
           )
         ));
+    }
     super.initState();
   }
 
@@ -40,7 +65,7 @@ class _DetailScreenState extends State<DetailScreen> with TickerProviderStateMix
 
     return Scaffold(
       appBar: AppBar(
-        title: Text(widget.item.name == "" ? widget.title : widget.item.name),
+        title: Text(widget.item.strMeal == "" ? widget.title : widget.item.strMeal),
         leading: IconButton(
           icon: Icon(Icons.arrow_back),
           onPressed: () => Navigator.pop(context, false),
@@ -50,12 +75,27 @@ class _DetailScreenState extends State<DetailScreen> with TickerProviderStateMix
         builder: (BuildContext buildContext) {
           _scaffoldState = Scaffold.of(buildContext);
 
-          return SafeArea(
+          return _showLoading ? Center(
+            child: Column(
+              children: <Widget>[
+                Padding(padding: EdgeInsets.only(top: MediaQuery.of(context).size.height * 0.3,)),
+                CircularProgressIndicator(),
+                Padding(padding: EdgeInsets.all(5.0)),
+                Text("Please Wait ...")
+              ],
+            ),
+          ) : SafeArea(
             child: Column(
               children: <Widget>[
                 Hero(
-                  child: Image.network(widget.item.image),
-                  tag: widget.item.id,
+                  child: Row(
+                    children: <Widget>[
+                      Expanded(
+                        child: Image.network(_foodModel.strMealThumb, height: MediaQuery.of(context).size.height * 0.4, fit: BoxFit.fill,),
+                      )
+                    ],
+                  ),
+                  tag: _foodModel.idMeal,
                   createRectTween: (begin, end) {
                     Rect newE = Rect.fromLTRB(end.left, end.top, end.right + 1000, end.bottom);
 
@@ -66,10 +106,10 @@ class _DetailScreenState extends State<DetailScreen> with TickerProviderStateMix
                   controller: _tabController,
                   tabs: <Widget>[
                     Tab(
-                      child: Text("Ingredient"),
+                      child: Text("Ingredients"),
                     ),
                     Tab(
-                      child: Text(widget.item.category == "breakfast" ? "Seasoning" : "How To"),
+                      child: Text("Instructions"),
                     )
                   ],
                   unselectedLabelColor: Colors.grey,
@@ -80,7 +120,7 @@ class _DetailScreenState extends State<DetailScreen> with TickerProviderStateMix
                     controller: _tabController,
                     children: <Widget>[
                       ListView(
-                        children: widget.item.ingredient.map((s) {
+                        children: _foodModel.combine.map((s) {
                           return ListTile(
                             dense: true,
                             title: Text(s),
@@ -88,26 +128,16 @@ class _DetailScreenState extends State<DetailScreen> with TickerProviderStateMix
                           );
                         }).toList(),
                       ),
-                      widget.item.category == "breakfast" ? ListView(
-                        children: widget.item.seasoning.map((s) {
-                          return ListTile(
-                            dense: true,
-                            title: Text(s),
-                            leading: Icon(Icons.check),
-                          );
-                        }).toList(),
-                      ) : Column(
-                        children: [
-                          Expanded(
-                            child: Padding(
-                              padding: EdgeInsets.all(10.0),
-                              child: Text(widget.item.howto, style: TextStyle(
-                                height: 1.2
-                              ),),
-                            ),
+                      ListView(
+                        children: <Widget>[
+                          Padding(
+                            padding: EdgeInsets.all(10.0),
+                            child: Text(_foodModel.strInstructions != null ? _foodModel.strInstructions : "-", style: TextStyle(
+                              height: 1.2
+                            ),),
                           )
-                        ]
-                      ),
+                        ],
+                      )
                     ],
                   ),
                 )
