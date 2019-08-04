@@ -1,18 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:meals_catalogue/screens/listFood.dart';
+import 'package:meals_catalogue/config/config.dart';
+import 'package:meals_catalogue/my_app.dart';
 
-void main() => runApp(MyApp());
-
-class MyApp extends StatelessWidget {
-
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Meals Catalogue',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: ListFood(),
-    );
-  }
+void main() {
+  return runApp(MyApp(configFlavor: Config.appConfig,));
 }

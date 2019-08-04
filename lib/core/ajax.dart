@@ -5,8 +5,15 @@ import 'functions.dart';
 
 class Ajax {
   Future<Map<String, dynamic>> get(AjaxParams params) async {
-    var cfg = await readConfig();
-    var res = await http.get(cfg['api']['url'] + params.url, headers: params.headers);
+    var url = "";
+    if (params.url.contains("http")) {
+      url = params.url;
+    } else {
+      var cfg = await readConfig();
+      url = cfg['api']['url'] + params.url;
+    }
+    var res = await http.get(url, headers: params.headers);
+
     return {
       "status": res.statusCode,
       "data": jsonDecode(res.body)
@@ -14,8 +21,14 @@ class Ajax {
   }
 
   Future<Map<String, dynamic>> post(AjaxParams params) async {
-    var cfg = await readConfig();
-    var res = await http.post(cfg['api']['url'] + params.url, body: params.payload, headers: params.headers);
+    var url = "";
+    if (params.url.contains("http")) {
+      url = params.url;
+    } else {
+      var cfg = await readConfig();
+      url = cfg['api']['url'] + params.url;
+    }
+    var res = await http.post(url, body: params.payload, headers: params.headers);
     return {
       "status": res.statusCode,
       "data": jsonDecode(res.body)
@@ -23,8 +36,14 @@ class Ajax {
   }
 
   Future<Map<String, dynamic>> put(AjaxParams params) async {
-    var cfg = await readConfig();
-    var res = await http.put(cfg['api']['url'] + params.url, body: params.payload, headers: params.headers);
+    var url = "";
+    if (params.url.contains("http")) {
+      url = params.url;
+    } else {
+      var cfg = await readConfig();
+      url = cfg['api']['url'] + params.url;
+    }
+    var res = await http.put(url, body: params.payload, headers: params.headers);
     return {
       "status": res.statusCode,
       "data": jsonDecode(res.body)
@@ -32,8 +51,14 @@ class Ajax {
   }
 
   Future<Map<String, dynamic>> delete(AjaxParams params) async {
-    var cfg = await readConfig();
-    var res = await http.delete(cfg['api']['url'] + params.url, headers: params.headers);
+    var url = "";
+    if (params.url.contains("http")) {
+      url = params.url;
+    } else {
+      var cfg = await readConfig();
+      url = cfg['api']['url'] + params.url;
+    }
+    var res = await http.delete(url, headers: params.headers);
     return {
       "status": res.statusCode,
       "data": jsonDecode(res.body)
